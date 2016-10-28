@@ -37,17 +37,12 @@ Module Program
     End Function
 
     ''' <summary>
-    ''' The function to build a number in two degree. Uses own method.
+    ''' The function to build a number in the two degree. Uses own method.
     ''' </summary>
     ''' <param name="a">A number.</param>
-    ''' <returns>A number that has been built in two degree.</returns>
+    ''' <returns>A number that has been built in the two degree.</returns>
     Private Function Pow(a As UInteger) As UInteger
-        a \= 10
-        a *= (a + 1)
-        a *= 100
-        a += 25
-
-        Return a
+        Return (a \ 10) * (a \ 10 + 1) * 100 + 25
     End Function
 
 End Module
