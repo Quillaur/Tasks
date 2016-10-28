@@ -14,7 +14,7 @@ Module Program
 
             Do
                 Console.Write("Enter N value: ")
-            Loop Until (UShort.TryParse(Console.ReadLine(), n) And n <> 0 And n < Pow(10, 4))
+            Loop Until (UShort.TryParse(Console.ReadLine(), n) And n <> 0 And n <= Pow(10, 4))
 
             For i As UShort = 1 To n
                 m += i
@@ -32,7 +32,7 @@ Module Program
     ''' <param name="a">A number.</param>
     ''' <param name="n">A degree.</param>
     ''' <returns>A number that has been built in a degree.</returns>
-    Function Pow(a As Byte, n As Byte) As UShort
+    Private Function Pow(a As Byte, n As Byte) As UShort
         Dim b As UShort = 1
 
         For i As Byte = 1 To n
