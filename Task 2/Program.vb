@@ -14,7 +14,7 @@ Module Program
 
             Do
                 Console.Write("Enter N value: ")
-            Loop Until (UShort.TryParse(Console.ReadLine(), n) And n <> 0 And n <= Pow(10, 4))
+            Loop Until (UShort.TryParse(Console.ReadLine(), n) AndAlso n <> 0 AndAlso n <= Pow(10, 4))
 
             For i As UShort = 1 To n
                 m += i

@@ -12,7 +12,7 @@ Module Program
 
             Do
                 Console.Write("Enter K value: ")
-            Loop Until (Byte.TryParse(Console.ReadLine(), k)) And k <> 0 And k < 10
+            Loop Until (Byte.TryParse(Console.ReadLine(), k)) AndAlso k <> 0 AndAlso k < 10
 
             Console.WriteLine($"The answer: {Solve(k)}")
 

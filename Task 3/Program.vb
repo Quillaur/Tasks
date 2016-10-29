@@ -12,7 +12,7 @@ Module Program
 
             Do
                 Console.Write("Enter A value: ")
-            Loop Until (UInteger.TryParse(Console.ReadLine(), a)) And a <> 0 And a <= 4 * Pow(10, 5) And a Mod 5 = 0 And a Mod 10 <> 0
+            Loop Until (UInteger.TryParse(Console.ReadLine(), a)) AndAlso a <> 0 AndAlso a <= 4 * Pow(10, 5) AndAlso a Mod 5 = 0 AndAlso a Mod 10 <> 0
 
             Console.WriteLine($"The answer: {Pow(a)}")
 
